@@ -1,0 +1,42 @@
+document.getElementById('current_fighter_submit').onclick = function(){
+    let elem = document.getElementById("current_fighter").value
+    
+    let request = new XMLHttpRequest()
+    request.open("GET", API_URL1 + elem, false);
+    request.send();
+    let data = JSON.parse(request.responseText)
+    
+    showDetails(data[0])
+    }
+
+
+function showDetails(fighter) {
+    let request = new XMLHttpRequest()
+    request.open("GET", API_URL + "Country/" + fighter['class_id'], false);
+    request.send();
+    let data = JSON.parse(request.responseText)
+    console.log(data)
+    let class_name = data['name']
+    request = new XMLHttpRequest()
+    request.open("GET", API_URL + "Age/" + fighter['purpose_id'], false);
+    request.send();
+    data = JSON.parse(request.responseText)
+    console.log(data)
+    let purpose_name = data['name']
+    request = new XMLHttpRequest()
+    request.open("GET", API_URL + "Belt/" + fighter['id'] + "/side-effects", false);
+    request.send();
+    data = JSON.parse(request.responseText)
+    console.log(data)
+    let side_effects = []
+    for (let i = 0; i< data.length; i++) {
+        side_effects.push(data[i]['name'])
+    }
+    document.getElementById('section2_inner_body_results_h').innerText = ('About fighter: ')
+    document.getElementById('fighter-0').innerText = ("Country: ")
+    document.getElementById('fighter-class').innerText = (class_name)
+    document.getElementById('fighter-1').innerText = ("Age: ")
+    document.getElementById('fighter-purpose').innerText = (purpose_name)
+    document.getElementById('fighter-2').innerText = ("Belt: ")
+    document.getElementById('fighter-side-effects').innerText = (side_effects.join(', '))
+}
