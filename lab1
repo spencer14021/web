@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.O.T</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500;700&family=Krub:wght@200;400;500;600;700&family=Livvic:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+
+                            <!-- INTRO -->
+
+<div class="intro ">
+    <div class="container">
+        <div class="row d-flex align-items-center animated fadeInDown">
+            <div class="col-lg-2 d-flex justify-content-center">
+                <img src="img/logo.svg" alt="logotip" class="logo">
+            </div>
+
+            <div class="col-lg-2">
+                <nav class="leng d-flex justify-content-center">
+                    <a class = "nav_link" href="#">ENG</a>
+                    <a class = "nav_link" href="#">UA</a>
+                    <a class = "nav_link" href="#">RU</a>
+                </nav>
+            </div>
+
+            <div class="col-lg-6 ml-auto">
+                <nav class="menu d-flex justify-content-center">
+                    <a class = "nav_link_1" href="#section2">SEARCH</a>
+                    <a class = "nav_link_1" href="#section">ADD</a>
+                    <a class = "nav_link_1" href="#footer">INFO</a>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="row d-flex justify-content-center animated fadeInRight">
+            <div class="col-lg-10 intro_inner">
+                <h1 class = "intro_title">K.O.T</h1>
+                <p class = "intro_description">For the first time ever, you can enter an international competition against martial artists from dozens of different countries - at home. Train, prepare, and on the day of the event, you will film a video submission with your form (kata/poomsae), and you can watch all other competitors' entries as well.</p>
+            </div>
+        </div>
+    </div>
+</div>
+                        <!-- \ INTRO -->
+
+
+                                    <!-- SECTION -->
+
+                                 <!-- \SECTION -->
+
+<section id="section2" class="section2">
+    <div class="container">
+        <div class="row ">
+            <div class="section2_inner col-lg-10 animated fadeInRight">
+                <div class="row section2_inner_header ">
+                    <h1 class = "col-lg-12 section2_inner_header_title ">
+                        Search fighter
+                    </h1>
+                    <h3 class = "col-lg-12 section2_inner_header_subtitle">
+                        Find some information about fighter
+                    </h3>         
+                </div>
+
+                <div class="row section2_inner_body ">
+                    <div class="col-lg-12 section2_inner_body_byname d-flex justify-content-center">
+                        <!-- <div class="section2_inner_body_byname_cheker ">
+                            <input class = 'section2_inner_body_byname_cheker_1' type="radio" name="a" value="By name">
+                        </div> -->
+                        <form action="" method="GET" class = "forma">
+                            <label for="current_supplement">By name:</label>
+                            <input id="current_supplement" type="text" placeholder="Enter name of fighter" name="name" class='section2_inner_body_byname_input'>
+                            <input id="current_supplement_submit"type="button" value="Search" class="section2_inner_body_byname_input_button">
+                          </form>
+                        
+                         
+                        
+                    </div>
+
+
+                    <div class="col-lg-12 section2_inner_body_results">
+                        <span class = "section2_inner_body_results_h" id ="section2_inner_body_results_h"></span>
+                        <div class="supplement-criteria"><span id="supplement-0"></span><span id="supplement-class"></span></div>
+                        <div class="supplement-criteria"><span id="supplement-1"></span><span id="supplement-purpose"></span></div>
+                        <div class="supplement-criteria"><span id="supplement-2"></span><span id="supplement-side-effects"></span></div>
+                    </div>
+
+            </div>
+        </div>    
+    </div> 
+</section>
+
+
+
+<section id="section" class="section">
+    <div class="container">
+        <div class="row ">
+            <div class="section_inner col-lg-10 animated fadeInLeft">
+
+                
+
+                <div class="row section2_inner_header">
+                    <h1 class = "col-lg-12 section2_inner_header_title ">
+                        Add new fighter
+                    </h1>
+                    <h3 class = "col-lg-12 section2_inner_header_subtitle">
+                        Register yourself in tournament
+                    </h3>         
+                </div>
+
+                
+                <div class="row section_inner_body d-flex j">
+                    <div class="col-lg-10 section_inner_body_form">
+                        <h2 class='section_inner_body_form_title'>Name</h2>
+                        <form class="section_inner_body_form_input">
+                            <input class = "section_inner_body_form_input_1" type="text" >
+                        </form>  
+                    </div>
+                    <div class="col-lg-10 section_inner_body_form">
+                        <h2 class='section_inner_body_form_title'>Country</h2>
+                        <form class="section_inner_body_form_input">
+                            <input class = "section_inner_body_form_input_1" type="text">
+                        </form>  
+                    </div>
+
+                    <div class="col-lg-10 section_inner_body_form">
+                        <h2 class='section_inner_body_form_title'>Belt</h2>
+                        <form class="section_inner_body_form_input">
+                            <input class = "section_inner_body_form_input_1" type="text">
+                        </form>  
+                    </div>
+
+                    <div class="col-lg-10 section_inner_body_form">
+                        <h2 class='section_inner_body_form_title'>Age</h2>
+                        <form class="section_inner_body_form_input">
+                            <input class = "section_inner_body_form_input_1" type="text">
+                        </form>  
+                    </div>
+
+
+                   
+
+                    <div class="col-lg-6">
+						<input type="submit" value="Add fighter" class=" section_inner_body_button">
+					</div>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </div> 
+</section>
+
+
+
+<footer id = 'footer' class = 'footer'>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <div class="row">
+                    <div class="footer_logo col-lg-2">
+                        <img src="img/logo.svg" alt="logotip" class = 'footer_logo_img'>
+                    </div>
+                    <div class="footer_text col-lg-10">
+                            Created by: ДЕНИС ШВИДКЕЙ <br>
+                            © 2020 All rights reserved. село Хлівище <br>
+                            Site designed and created by: мспетя(с)@gmail.com <br>
+                            Contacts: +38 (096) 26 79 656 <br>
+                            
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div> 
+</footer>
+
+
+
+
+
+</body>
+<script src="js/supplements.js"></script>
+</html>
